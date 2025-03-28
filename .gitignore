@@ -1,0 +1,12 @@
+.idea
+.cache
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+dist
+build
+node_modules
+dist-electron
+example/public
+package-lock.json

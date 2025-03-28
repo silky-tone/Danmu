@@ -1,0 +1,30 @@
+{
+  "name": "@silkytone/danmu",
+  "version": "1.0.0",
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.umd.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --project tsconfig.types.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silky-tone/Danmu.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "danmu",
+    "弹幕"
+  ],
+  "author": "Funny002 <2048412928@qq.com>",
+  "description": "弹幕的简单实现，实现普通弹幕或高级弹幕。",
+  "bugs": {
+    "url": "https://github.com/silky-tone/Danmu/issues"
+  },
+  "homepage": "https://github.com/silky-tone/Danmu#readme",
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vite": "^6.2.3"
+  }
+}
