@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/silky-tone/Danmu#readme",
   "devDependencies": {
+    "@types/node": "^22.13.14",
     "typescript": "^5.8.2",
     "vite": "^6.2.3"
   }

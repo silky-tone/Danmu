@@ -5,8 +5,9 @@ export default defineConfig(({ command }) => {
   return {
     root: resolve(__dirname, './example'),
     server: {
-      port: 8415,
+      port: 4129,
       open: true,
+      host: '0.0.0.0',
     },
     publicDir: command === 'build' ? false : resolve(__dirname, './public'),
     build: {

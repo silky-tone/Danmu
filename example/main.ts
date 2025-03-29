@@ -1,5 +1,16 @@
-import { TextBarrage } from '../lib';
+import { Barrage, TextBarrage } from '../lib';
 
-const x = new TextBarrage('Hello World', 3);
+const barrage = new Barrage('#barrage', {
+  trackSplit: 10,
+});
 
-console.log(x);
+const input = document.querySelector<HTMLInputElement>('#input')!;
+const submit = document.querySelector<HTMLButtonElement>('#submit')!;
+
+submit.addEventListener('click', onSubmit);
+
+function onSubmit() {
+  const val = (input['value'] || '').trim();
+  if (!val) return alert('请输入内容');
+  barrage.push(new TextBarrage(val, 3));
+}

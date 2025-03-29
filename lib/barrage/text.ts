@@ -10,6 +10,7 @@ export class TextBarrage extends BarrageBase<HTMLDivElement> {
   constructor(text: string, duration = 3) {
     super(VNode('div', {
       class: 'var-barrage-item is-text',
+      style: { display: 'inline-block' },
     }, [
       VNode('span', {}, [text]),
     ]) as HTMLDivElement);

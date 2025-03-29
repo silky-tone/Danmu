@@ -1,3 +1,3 @@
 // core/index.ts
 
-export * from './Barrage';
+export * from './barrage';
